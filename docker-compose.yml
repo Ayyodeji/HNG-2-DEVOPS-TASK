@@ -1,0 +1,11 @@
+version: '2'
+services:
+  api:
+    image: olasteeve/backend:backenddjango       
+    ports:
+      - "8000:8000"
+
+  web:
+    image: olasteeve/frontend:frontendreact
+    ports:
+      - "3000:3000"
